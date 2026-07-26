@@ -1,0 +1,9 @@
+.env
+.env.local
+.vercel/
+node_modules/
+*.log
+.DS_Store
+temp/
+uploads-temp/
+config.local.js
