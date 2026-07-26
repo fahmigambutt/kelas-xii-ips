@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>XII IPS — Official Class Website</title>
+  <meta name="description" content="Website resmi kelas XII IPS untuk profil, struktur organisasi, anggota, galeri, dan dokumentasi angkatan.">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="color-scheme" content="dark light">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="XII IPS — Official Class Website">
+  <meta property="og:description" content="Website resmi dan dokumentasi kelas XII IPS.">
+  <meta property="og:image" content="./assets/defaults/default-background.webp">
+  <meta property="og:url" content="https://example.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="XII IPS — Official Class Website">
+  <meta name="twitter:description" content="Website resmi dan dokumentasi kelas XII IPS.">
+  <meta name="twitter:image" content="./assets/defaults/default-background.webp">
+  <link rel="canonical" href="https://example.com/">
+  <link rel="icon" type="image/png" href="./assets/icons/favicon.png">
+  <link rel="preload" as="image" href="./assets/defaults/default-background.webp" fetchpriority="high">
+  <link rel="stylesheet" href="./style.css?v=1.0.0">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"XII IPS — Official Class Website",
+    "url":"https://example.com/",
+    "description":"Website resmi kelas XII IPS."
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Lewati ke konten</a>
+
+  <div id="loading-screen" class="loading-screen" aria-label="Memuat website" aria-live="polite">
+    <div class="loading-orb" aria-hidden="true"></div>
+    <img id="loading-logo" src="./assets/defaults/default-logo.webp" width="132" height="132" alt="Logo XII IPS">
+    <p>WELCOME</p>
+    <h1>XII IPS</h1>
+    <button id="skip-loading" class="button button-ghost" type="button">Lewati</button>
+  </div>
+
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+  <div id="mouse-light" aria-hidden="true"></div>
+  <div id="connection-banner" class="connection-banner" role="status" aria-live="polite" hidden>Koneksi terputus. Draft tetap tersimpan di perangkat.</div>
+
+  <header class="site-header" id="site-header">
+    <nav class="dynamic-island" aria-label="Navigasi utama">
+      <a class="brand-mini" href="#home" aria-label="Ke Home">
+        <img id="nav-logo" src="./assets/defaults/default-logo.webp" width="36" height="36" alt="Logo XII IPS">
+      </a>
+      <div class="nav-links" id="nav-links">
+        <button class="nav-link is-active" type="button" data-target="home">Home</button>
+        <button class="nav-link" type="button" data-target="tentang">Tentang</button>
+        <button class="nav-link" type="button" data-target="struktur">Struktur</button>
+        <button class="nav-link" type="button" data-target="anggota">Anggota</button>
+        <button class="nav-link" type="button" data-target="galeri">Galeri</button>
+        <button class="nav-link" type="button" data-target="penutup">Penutup</button>
+      </div>
+      <div class="nav-actions">
+        <button id="previous-section" class="icon-button desktop-only" type="button" aria-label="Bagian sebelumnya">←</button>
+        <button id="next-section" class="icon-button desktop-only" type="button" aria-label="Bagian berikutnya">→</button>
+        <button id="account-button" class="account-chip" type="button" aria-label="Akun pengelola" hidden>
+          <span id="account-initial">A</span>
+          <span class="account-chip-copy"><b id="account-name">Pengelola</b><small id="account-role">Editor</small></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="section hero-section" aria-labelledby="home-title">
+      <div class="hero-backdrop" aria-hidden="true"></div>
+      <div class="ambient ambient-one" aria-hidden="true"></div>
+      <div class="ambient ambient-two" aria-hidden="true"></div>
+      <article class="glass-panel hero-card reveal" data-edit-scope="site_settings">
+        <div class="hero-logo-wrap editable-media" data-media-action="logo">
+          <img id="hero-logo" src="./assets/defaults/default-logo.webp" width="180" height="180" alt="Logo kelas XII IPS">
+          <button class="edit-fab editor-only" type="button" data-editor-action="edit-logo" hidden>Ganti Logo</button>
+          <button class="edit-fab edit-fab-secondary editor-only" type="button" data-editor-action="reset-logo" hidden>Reset Logo</button>
+        </div>
+        <p id="welcome-text" class="eyebrow editable-text" data-edit-key="site_settings.welcome_text">WELCOME XII IPS</p>
+        <h1 id="home-title" class="hero-title editable-text" data-edit-key="site_settings.class_name">XII IPS</h1>
+        <p id="motto" class="hero-motto editable-text" data-edit-key="site_settings.motto">Bersama tumbuh, bersama mengukir cerita.</p>
+        <p id="generation" class="generation-pill editable-text" data-edit-key="site_settings.generation">Angkatan 2026</p>
+        <p id="home-description" class="hero-description editable-text" data-edit-key="site_settings.description">Ruang digital untuk menyimpan cerita, karya, persahabatan, dan kenangan terbaik keluarga XII IPS.</p>
+        <div class="hero-actions">
+          <button class="button button-primary" type="button" data-target="tentang">NEXT <span aria-hidden="true">→</span></button>
+          <button id="edit-website-button" class="button button-secondary" type="button" hidden>Edit Website</button>
+        </div>
+      </article>
+      <button class="scroll-cue" type="button" data-target="tentang" aria-label="Lihat bagian Tentang"><span>Gulir</span><i aria-hidden="true"></i></button>
+    </section>
+
+    <section id="tentang" class="section content-section" aria-labelledby="about-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">OUR STORY</p>
+        <h2 id="about-title" class="editable-text" data-edit-key="labels.about_title">Tentang XII IPS</h2>
+        <p>Kisah singkat tentang perjalanan, tujuan, dan harapan kelas kami.</p>
+      </div>
+      <div class="about-layout">
+        <article class="glass-card about-feature reveal editable-text-card" data-edit-key="about.history">
+          <span class="card-number">01</span><h3>Sejarah Singkat</h3><p id="about-history">XII IPS adalah keluarga belajar yang tumbuh melalui kerja sama, keberanian, dan kepedulian.</p>
+        </article>
+        <article class="glass-card reveal editable-text-card" data-edit-key="about.vision"><span class="card-number">02</span><h3>Visi</h3><p id="about-vision">Menjadi kelas yang solid, berprestasi, berkarakter, dan saling mendukung.</p></article>
+        <article class="glass-card reveal editable-text-card" data-edit-key="about.mission"><span class="card-number">03</span><h3>Misi</h3><p id="about-mission">Belajar konsisten, menjaga kekompakan, menghargai perbedaan, dan menciptakan kenangan positif.</p></article>
+        <article class="glass-card reveal editable-text-card" data-edit-key="about.goals"><span class="card-number">04</span><h3>Tujuan</h3><p id="about-goals">Membentuk lingkungan kelas yang aman, produktif, kreatif, dan menyenangkan.</p></article>
+        <article class="glass-card reveal editable-text-card" data-edit-key="about.expectations"><span class="card-number">05</span><h3>Harapan</h3><p id="about-expectations">Semoga setiap anggota tumbuh menjadi pribadi yang bermanfaat dan tetap terhubung setelah lulus.</p></article>
+        <article class="glass-card reveal editable-text-card" data-edit-key="about.achievements"><span class="card-number">06</span><h3>Prestasi</h3><p id="about-achievements">Prestasi akademik, organisasi, olahraga, seni, dan berbagai kontribusi positif di sekolah.</p></article>
+      </div>
+      <blockquote id="class-quote" class="glass-quote reveal editable-text" data-edit-key="about.quote">“Kelas bukan hanya tempat belajar, tetapi tempat kita bertumbuh bersama.”</blockquote>
+    </section>
+
+    <section id="struktur" class="section content-section" aria-labelledby="structure-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">OUR TEAM</p>
+        <h2 id="structure-title" class="editable-text" data-edit-key="labels.structure_title">Struktur Organisasi XII IPS</h2>
+        <p>Orang-orang yang menjaga ritme, koordinasi, dan kebersamaan kelas.</p>
+      </div>
+      <div class="section-tools editor-only" hidden><button class="button button-secondary" type="button" data-editor-action="add-structure">+ Tambah Struktur</button></div>
+      <div id="structure-grid" class="structure-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="anggota" class="section content-section" aria-labelledby="members-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CLASS FAMILY</p>
+        <h2 id="members-title" class="editable-text" data-edit-key="labels.members_title">Anggota XII IPS</h2>
+        <p><strong id="member-count">30</strong> anggota, satu cerita besar.</p>
+      </div>
+      <div class="member-controls glass-card reveal">
+        <label class="search-field"><span class="sr-only">Cari anggota</span><input id="member-search" type="search" inputmode="search" placeholder="Cari nama atau Instagram…" autocomplete="off"></label>
+        <label class="select-field"><span class="sr-only">Filter nomor absen</span><select id="attendance-filter"><option value="all">Semua nomor absen</option><option value="1-10">1–10</option><option value="11-20">11–20</option><option value="21-30">21–30</option></select></label>
+        <button class="button button-secondary editor-only" type="button" data-editor-action="add-member" hidden>+ Tambah Anggota</button>
+      </div>
+      <div id="member-grid" class="member-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="galeri" class="section content-section" aria-labelledby="gallery-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MEMORIES</p>
+        <h2 id="gallery-title" class="editable-text" data-edit-key="labels.gallery_title">Galeri Kenangan</h2>
+        <p>Potongan momen yang layak disimpan lebih lama.</p>
+      </div>
+      <div class="gallery-toolbar glass-card reveal">
+        <div id="gallery-filters" class="filter-pills" role="group" aria-label="Filter kategori galeri"></div>
+        <label class="button button-secondary editor-only" hidden>Upload Banyak Foto<input id="gallery-upload-input" type="file" accept="image/jpeg,image/png,image/webp" multiple hidden></label>
+      </div>
+      <div id="upload-progress" class="upload-progress" hidden><div><span></span></div><p>Mengunggah foto…</p></div>
+      <div id="gallery-grid" class="gallery-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="penutup" class="section closing-section" aria-labelledby="closing-title">
+      <div class="closing-backdrop" aria-hidden="true"></div>
+      <article class="glass-panel closing-card reveal">
+        <img id="closing-logo" src="./assets/defaults/default-logo.webp" width="132" height="132" alt="Logo XII IPS">
+        <h2 id="closing-title" class="editable-text" data-edit-key="site_settings.closing_text">Terima kasih telah menjadi bagian dari XII IPS.</h2>
+        <p id="closing-subtitle">Semoga persahabatan ini tidak pernah berakhir.</p>
+        <blockquote id="closing-quote" class="editable-text" data-edit-key="site_settings.closing_quote">“Yang selesai hanyalah masa sekolahnya, bukan persahabatannya.”</blockquote>
+        <p id="closing-generation">Angkatan 2026</p>
+        <button class="button button-primary" type="button" data-target="home">Kembali ke Atas ↑</button>
+      </article>
+      <footer class="site-footer">
+        <p>© <span id="current-year"></span> XII IPS. Dibuat untuk menyimpan cerita.</p>
+        <button id="login-manager-button" class="text-button" type="button">Login Pengelola</button>
+      </footer>
+    </section>
+  </main>
+
+  <nav class="mobile-nav" aria-label="Navigasi mobile">
+    <button type="button" data-target="home" class="is-active"><span>⌂</span><small>Home</small></button>
+    <button type="button" data-target="tentang"><span>◌</span><small>Tentang</small></button>
+    <button type="button" data-target="struktur"><span>◇</span><small>Struktur</small></button>
+    <button type="button" data-target="anggota"><span>◉</span><small>Anggota</small></button>
+    <button type="button" data-target="galeri"><span>▦</span><small>Galeri</small></button>
+    <button type="button" data-target="penutup"><span>✦</span><small>Penutup</small></button>
+  </nav>
+
+  <aside id="editor-toolbar" class="editor-toolbar" aria-label="Toolbar Mode Edit" hidden>
+    <div class="editor-status"><span id="save-status-dot"></span><span id="save-status">Semua perubahan tersimpan</span></div>
+    <div class="editor-actions">
+      <button id="save-all-button" class="toolbar-button is-primary" type="button" disabled>Simpan</button>
+      <button id="cancel-all-button" class="toolbar-button" type="button">Batalkan</button>
+      <button id="undo-button" class="toolbar-button" type="button" disabled aria-label="Undo">↶</button>
+      <button id="redo-button" class="toolbar-button" type="button" disabled aria-label="Redo">↷</button>
+      <button id="preview-button" class="toolbar-button" type="button">Preview</button>
+      <button id="settings-button" class="toolbar-button" type="button">Pengaturan</button>
+      <button id="users-button" class="toolbar-button super-admin-only" type="button" hidden>Pengguna</button>
+      <button id="audit-button" class="toolbar-button super-admin-only" type="button" hidden>Audit</button>
+      <button id="exit-edit-button" class="toolbar-button" type="button">Keluar Edit</button>
+    </div>
+  </aside>
+
+  <div id="modal-root" class="modal-root" aria-live="polite"></div>
+  <div id="toast-region" class="toast-region" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <template id="skeleton-template"><article class="skeleton-card"><div></div><span></span><span></span></article></template>
+
+  <audio id="background-audio" preload="none" loop></audio>
+  <button id="music-toggle" class="music-toggle" type="button" aria-label="Putar musik" hidden>♫</button>
+
+  <script type="module" src="./script.js?v=1.0.0"></script>
+</body>
+</html>

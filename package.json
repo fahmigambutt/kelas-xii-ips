@@ -1,0 +1,19 @@
+{
+  "name": "xii-ips-ultra-premium-online-editor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Website resmi XII IPS dengan editor langsung, Supabase, dan Vercel Functions.",
+  "scripts": {
+    "dev": "npx vercel dev",
+    "check": "node ./scripts/check-project.mjs",
+    "start": "npx vercel dev",
+    "vercel-build": "npm run check"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.110.8"
+  }
+}
