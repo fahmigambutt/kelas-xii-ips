@@ -1,0 +1,92 @@
+/*
+ * XII IPS — Fix Logo Proporsional
+ * Tujuan: mempertahankan rasio asli gambar logo tanpa mengganti file gambar.
+ * File ini harus dimuat setelah style.css / upgrade CSS lainnya.
+ */
+
+/* Aturan dasar untuk semua logo utama */
+img#loading-logo,
+img#nav-logo,
+img#hero-logo,
+img#closing-logo {
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  max-width: 100% !important;
+}
+
+/* Logo animasi pembuka: tinggi tetap, lebar mengikuti rasio asli */
+img#loading-logo {
+  width: auto !important;
+  height: clamp(112px, 24vw, 148px) !important;
+}
+
+/* Logo kecil pada header/dynamic island */
+.brand-mini {
+  display: grid !important;
+  place-items: center !important;
+}
+
+.brand-mini img#nav-logo,
+img#nav-logo {
+  width: auto !important;
+  height: 36px !important;
+  max-width: 38px !important;
+}
+
+/* Logo besar pada kartu Home */
+.hero-logo-wrap {
+  display: inline-grid !important;
+  place-items: center !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.hero-logo-wrap img#hero-logo,
+img#hero-logo {
+  width: auto !important;
+  height: clamp(138px, 29vw, 190px) !important;
+  max-width: min(52vw, 190px) !important;
+}
+
+/* Logo pada bagian Penutup */
+.closing-card img#closing-logo,
+img#closing-logo {
+  width: auto !important;
+  height: clamp(112px, 23vw, 140px) !important;
+  max-width: min(44vw, 150px) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Penyesuaian layar HP agar logo tidak terlalu besar */
+@media (max-width: 520px) {
+  img#loading-logo {
+    height: 118px !important;
+  }
+
+  .brand-mini img#nav-logo,
+  img#nav-logo {
+    height: 34px !important;
+    max-width: 36px !important;
+  }
+
+  .hero-logo-wrap img#hero-logo,
+  img#hero-logo {
+    height: clamp(132px, 36vw, 168px) !important;
+    max-width: 48vw !important;
+  }
+
+  .closing-card img#closing-logo,
+  img#closing-logo {
+    height: 118px !important;
+    max-width: 42vw !important;
+  }
+}
+
+/* Menghormati pengaturan aksesibilitas perangkat */
+@media (prefers-reduced-motion: reduce) {
+  img#loading-logo {
+    animation: none !important;
+  }
+}
