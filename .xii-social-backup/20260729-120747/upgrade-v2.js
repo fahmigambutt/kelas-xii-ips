@@ -288,6 +288,7 @@
   runWhenReady(() => {
     enhanceLoader();
     observeStructure();
-    try { localStorage.removeItem(STORAGE_KEY); } catch (error) { console.warn(error); }
+    initializeBackground();
+    createBackgroundPersonalizer();
   });
 })();

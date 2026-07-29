@@ -1,6 +1,6 @@
-# XII SOCIAL — Ultra Premium Official Class Website
+# XII IPS — Ultra Premium Official Class Website
 
-Website resmi kelas XII SOCIAL berbasis HTML, CSS, dan JavaScript ES Modules tanpa framework frontend. Proyek ini menyediakan tampilan Apple-inspired Liquid Glass, navigasi natural tanpa scroll snap, profil kelas, struktur, anggota, galeri, editor langsung pada website utama, autentikasi Supabase, database PostgreSQL, Storage, Realtime, audit log, dan pengelolaan akun melalui Vercel Functions.
+Website resmi kelas XII IPS berbasis HTML, CSS, dan JavaScript ES Modules tanpa framework frontend. Proyek ini menyediakan tampilan Apple-inspired Liquid Glass, navigasi natural tanpa scroll snap, profil kelas, struktur, anggota, galeri, editor langsung pada website utama, autentikasi Supabase, database PostgreSQL, Storage, Realtime, audit log, dan pengelolaan akun melalui Vercel Functions.
 
 > Tidak ada route `/admin`. Semua pengeditan dilakukan pada halaman utama setelah pengguna login dan mengaktifkan **Mode Edit**.
 
@@ -160,7 +160,7 @@ Super Admin pertama harus dibuat melalui Supabase Dashboard, bukan hardcoded.
 ```sql
 update public.profiles
 set
-  full_name = 'Super Admin XII SOCIAL',
+  full_name = 'Super Admin XII IPS',
   email = 'EMAIL_ADMIN_SEBENARNYA',
   role = 'super_admin',
   is_active = true,
@@ -214,7 +214,7 @@ Jangan membuka `index.html` langsung dengan skema `file://` karena ES Modules da
 ```bash
 git init
 git add .
-git commit -m "Initial XII SOCIAL website"
+git commit -m "Initial XII IPS website"
 git branch -M main
 git remote add origin https://github.com/USERNAME/NAMA-REPOSITORY.git
 git push -u origin main
