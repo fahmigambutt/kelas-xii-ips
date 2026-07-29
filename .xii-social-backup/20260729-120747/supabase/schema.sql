@@ -1,4 +1,4 @@
--- XII SOCIAL Ultra Premium — Database schema
+-- XII IPS Ultra Premium — Database schema
 -- Jalankan lebih dahulu melalui Supabase SQL Editor.
 
 create extension if not exists pgcrypto;
@@ -8,14 +8,14 @@ grant usage on schema private to authenticated;
 
 create table if not exists public.site_settings (
   id uuid primary key default gen_random_uuid(),
-  site_name text not null default 'XII SOCIAL — Official Class Website',
-  class_name text not null default 'XII SOCIAL',
-  welcome_text text not null default 'WELCOME XII SOCIAL',
+  site_name text not null default 'XII IPS — Official Class Website',
+  class_name text not null default 'XII IPS',
+  welcome_text text not null default 'WELCOME XII IPS',
   motto text not null default 'Bersama tumbuh, bersama mengukir cerita.',
   generation text not null default 'Angkatan 2026',
   description text not null default '',
   logo_url text,
-  closing_text text not null default 'Terima kasih telah menjadi bagian dari XII SOCIAL.',
+  closing_text text not null default 'Terima kasih telah menjadi bagian dari XII IPS.',
   closing_quote text not null default 'Yang selesai hanyalah masa sekolahnya, bukan persahabatannya.',
   theme_color text not null default '#08101d' check (theme_color ~ '^#[0-9A-Fa-f]{6}$'),
   accent_color text not null default '#6aa9ff' check (accent_color ~ '^#[0-9A-Fa-f]{6}$'),
@@ -49,9 +49,9 @@ create table if not exists public.about (
 
 create table if not exists public.content_labels (
   id uuid primary key default gen_random_uuid(),
-  about_title text not null default 'Tentang XII SOCIAL',
-  structure_title text not null default 'Struktur Organisasi XII SOCIAL',
-  members_title text not null default 'Anggota XII SOCIAL',
+  about_title text not null default 'Tentang XII IPS',
+  structure_title text not null default 'Struktur Organisasi XII IPS',
+  members_title text not null default 'Anggota XII IPS',
   gallery_title text not null default 'Galeri Kenangan',
   updated_at timestamptz not null default now(),
   updated_by uuid references auth.users(id) on delete set null

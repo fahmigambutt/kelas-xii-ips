@@ -31,7 +31,7 @@ function demoMembers() {
     birth_place: 'Kota Kelahiran',
     birth_date: null,
     instagram: `anggota${String(index + 1).padStart(2, '0')}`,
-    bio: 'Salah satu bagian penting dari keluarga XII SOCIAL.',
+    bio: 'Salah satu bagian penting dari keluarga XII IPS.',
     hobbies: 'Belajar, musik, dan olahraga',
     ambition: 'Meraih masa depan terbaik',
     quote: 'Terus bertumbuh dan jangan takut mencoba.',
@@ -44,7 +44,7 @@ function demoGallery() {
   return GALLERY_CATEGORIES.map((category, index) => ({
     id: `demo-gallery-${index + 1}`,
     title: category,
-    caption: `Dokumentasi kegiatan ${category} XII SOCIAL.`,
+    caption: `Dokumentasi kegiatan ${category} XII IPS.`,
     category,
     event_date: null,
     image_url: index % 2 ? DEFAULT_ASSETS.gallery : DEFAULT_ASSETS.background,
@@ -55,14 +55,14 @@ function demoGallery() {
 export const fallbackData = Object.freeze({
   site_settings: {
     id: fixedIds.site,
-    site_name: 'XII SOCIAL — Official Class Website',
-    class_name: 'XII SOCIAL',
-    welcome_text: 'WELCOME XII SOCIAL',
+    site_name: 'XII IPS — Official Class Website',
+    class_name: 'XII IPS',
+    welcome_text: 'WELCOME XII IPS',
     motto: 'Bersama tumbuh, bersama mengukir cerita.',
     generation: 'Angkatan 2026',
-    description: 'Ruang digital untuk menyimpan cerita, karya, persahabatan, dan kenangan terbaik keluarga XII SOCIAL.',
+    description: 'Ruang digital untuk menyimpan cerita, karya, persahabatan, dan kenangan terbaik keluarga XII IPS.',
     logo_url: DEFAULT_ASSETS.logo,
-    closing_text: 'Terima kasih telah menjadi bagian dari XII SOCIAL.',
+    closing_text: 'Terima kasih telah menjadi bagian dari XII IPS.',
     closing_quote: '“Yang selesai hanyalah masa sekolahnya, bukan persahabatannya.”',
     accent_color: '#6aa9ff',
     theme_color: '#08101d',
@@ -79,7 +79,7 @@ export const fallbackData = Object.freeze({
   },
   about: {
     id: fixedIds.about,
-    history: 'XII SOCIAL adalah keluarga belajar yang tumbuh melalui kerja sama, keberanian, dan kepedulian.',
+    history: 'XII IPS adalah keluarga belajar yang tumbuh melalui kerja sama, keberanian, dan kepedulian.',
     vision: 'Menjadi kelas yang solid, berprestasi, berkarakter, dan saling mendukung.',
     mission: 'Belajar konsisten, menjaga kekompakan, menghargai perbedaan, dan menciptakan kenangan positif.',
     goals: 'Membentuk lingkungan kelas yang aman, produktif, kreatif, dan menyenangkan.',
@@ -97,9 +97,9 @@ export const fallbackData = Object.freeze({
     scale: 108
   },
   labels: {
-    about_title: 'Tentang XII SOCIAL',
-    structure_title: 'Struktur Organisasi XII SOCIAL',
-    members_title: 'Anggota XII SOCIAL',
+    about_title: 'Tentang XII IPS',
+    structure_title: 'Struktur Organisasi XII IPS',
+    members_title: 'Anggota XII IPS',
     gallery_title: 'Galeri Kenangan'
   },
   structure_members: demoStructure(),
