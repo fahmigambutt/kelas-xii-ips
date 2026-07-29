@@ -35,7 +35,6 @@
   }
   </script>
   <link rel="stylesheet" href="./xii-social-mobile.css?v=4.1.0">
-  <link rel="stylesheet" href="./xii-social-hero-group.css?v=1.0.0">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Lewati ke konten</a>
@@ -210,6 +209,5 @@
 
   <script type="module" src="./script.js?v=1.0.0"></script>
   <script type="module" src="./xii-social-mobile.js?v=4.1.0"></script>
-  <script type="module" src="./xii-social-hero-group.js?v=1.0.0"></script>
 </body>
 </html>
